@@ -1,11 +1,14 @@
 # Machine-Learning
-import numpy as npdataset
+import numpy as np
 import matplotlib.pyplot as plt  
-# load the CSV file as a numpy matrix dataset = np.loadtxt('../data/watermelon_3a.csv', delimiter=",")
+
+# load the CSV file as a numpy matrix 
+dataset = np.loadtxt('../data/watermelon_3a.csv', delimiter=",")
 X = dataset[:,1:3]
 y = dataset[:,3]
 
 m,n = np.shape(X)
+
 # draw scatter diagram to show the raw data
 f1 = plt.figure(1)       
 plt.title('watermelon_3a')  
